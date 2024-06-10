@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "ImageFlow"
+version = "0.0.0"
+description = """
+ImageFlow is a Python-based image processing application that helps user to filter images.
+"""
+authors = ["Julien LE SAUCE <julien.lesauce@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jlesauce/ImageFlow"
+repository = "https://github.com/jlesauce/ImageFlow"
+keywords = ["image", "sorting", "tool"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: X11 Applications :: Qt",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities"
+]
+packages = [
+    { include = "imageflow" },
+]
+include = [
+    "LICENSE"
+]
+
+[tool.poetry.scripts]
+smashdown = 'imageflow.__main__:main'
+
+[tool.poetry.dependencies]
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_window</class>
+ <widget class="QMainWindow" name="main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="central_widget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <layout class="QHBoxLayout" name="select_selection_path_layout">
+      <item>
+       <widget class="QLabel" name="label_selection_path">
+        <property name="text">
+         <string>Selection folder (jpg):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edit_selection_path"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="select_selection_path_button">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_raw_path">
+        <property name="text">
+         <string>Selection folder (raw):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edit_raw_path"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="select_raw_path_button">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="1">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="5" column="0">
+       <widget class="QListWidget" name="selection_list"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_selection">
+        <property name="text">
+         <string>Selection:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QListWidget" name="output_list"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_output">
+        <property name="text">
+         <string>Output:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="move_selection_button">
+        <property name="text">
+         <string>Move selected (.NEF) to output folder</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QHBoxLayout" name="select_output_path_layout">
+      <item>
+       <widget class="QLabel" name="label_output_path">
+        <property name="text">
+         <string>Output path:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edit_output_path"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="select_output_path_button">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menu_bar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="menu_action_settings"/>
+    <addaction name="menu_action_exit"/>
+   </widget>
+   <addaction name="menu_file"/>
+  </widget>
+  <action name="menu_action_settings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="statusTip">
+    <string>Application settings</string>
+   </property>
+  </action>
+  <action name="menu_action_exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit application</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
