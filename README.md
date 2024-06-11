@@ -9,6 +9,14 @@ an output folder.
 
 #TODO
 
+## Packaging
+
+To package the application, run the following command:
+
+```shell
+pyinstaller --name "ImageFlow" --onefile --add-data "imageflow/ui/design/main_window.ui;imageflow/ui/design/" imageflow/__main__.py --icon="app_icon.ico"
+```
+
 ## Contributions
 
 Contributions to ImageFlow are welcome! If you have any ideas for new features or improvements, feel free to open an

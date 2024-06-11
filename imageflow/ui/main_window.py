@@ -64,7 +64,7 @@ class MainWindow(QMainWindow):
             QApplication.restoreOverrideCursor()
 
     def _init_ui(self):
-        self.setWindowTitle(self._model.application_name)
+        self.setWindowTitle(f"{self._model.application_name} - v{self._model.application_version}")
         self._init_ui_actions()
 
     def _init_ui_actions(self):

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ImageFlow"
-version = "0.0.0"
+version = "1.0"
 description = """
 ImageFlow is a Python-based image processing application that helps user to filter images.
 """
@@ -28,8 +28,11 @@ include = [
 smashdown = 'imageflow.__main__:main'
 
 [tool.poetry.dependencies]
+PyQt6 = "~=6.7.0"
+observable = "~=1.0.3"
 
 [tool.poetry.dev-dependencies]
+pyinstaller = "~=6.8.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -1,5 +1,7 @@
 from PyQt6.QtCore import QSettings
 
+from imageflow import __version__
+
 
 class ApplicationModel:
     APPLICATION_NAME = 'ImageFlow'
@@ -7,6 +9,7 @@ class ApplicationModel:
 
     def __init__(self):
         self.application_name = ApplicationModel.APPLICATION_NAME
+        self.application_version = __version__
         self.settings = QSettings(ApplicationModel.APPLICATION_SHORT_NAME)
         self._init_settings()
 
